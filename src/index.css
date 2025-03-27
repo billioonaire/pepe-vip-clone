@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 0%;
+    --foreground: 0 0% 100%;
+
+    --card: 0 0% 3%;
+    --card-foreground: 0 0% 100%;
+
+    --popover: 0 0% 0%;
+    --popover-foreground: 0 0% 100%;
+
+    --primary: 45 100% 50%;
+    --primary-foreground: 0 0% 0%;
+
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 0 0% 20%;
+    --muted-foreground: 0 0% 80%;
+
+    --accent: 39 100% 50%;
+    --accent-foreground: 0 0% 0%;
+
+    --destructive: 0 100% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 45 100% 50%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-white/20;
+  }
+  body {
+    @apply bg-biao text-white min-h-screen;
+    background-image: 
+      linear-gradient(rgba(0, 0, 0, 0.92), rgba(0, 0, 0, 0.92)),
+      url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23FFD700' fill-opacity='0.1'%3E%3Cpath d='M40 0c22.091 0 40 17.909 40 40S62.091 80 40 80 0 62.091 0 40 17.909 0 40 0zm0 2c21.027 0 38 16.973 38 38S61.027 78 40 78 2 61.027 2 40 18.973 2 40 2zm0 2c19.882 0 36 16.118 36 36S59.882 76 40 76 4 59.882 4 40 20.118 4 40 4zm0 2c18.778 0 34 15.222 34 34S58.778 74 40 74 6 58.778 6 40 21.222 6 40 6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-position: center;
+    background-repeat: repeat;
+    background-size: 80px 80px;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading font-bold;
+  }
+  h1 {
+    @apply text-5xl md:text-6xl lg:text-7xl;
+  }
+  h2 {
+    @apply text-3xl md:text-4xl lg:text-5xl;
+  }
+  section {
+    @apply py-12 md:py-16 lg:py-20 border-t border-white/20;
+  }
+}
+
+/* Utility classes */
+@layer components {
+  .container-custom {
+    @apply container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl;
+  }
+  .btn {
+    @apply inline-flex items-center justify-center rounded-full px-4 py-2 text-sm font-medium
+    transition-colors focus-visible:outline-none focus-visible:ring-2
+    disabled:opacity-50 disabled:pointer-events-none;
+  }
+  .btn-primary {
+    @apply bg-biao-gold hover:bg-biao-gold/90 text-black;
+  }
+  .btn-outline {
+    @apply border border-white/30 hover:bg-white/10 text-white;
+  }
+  .panda-card {
+    @apply bg-biao-light rounded-lg p-6 border border-biao-gold/20 shadow-md;
+  }
+}
