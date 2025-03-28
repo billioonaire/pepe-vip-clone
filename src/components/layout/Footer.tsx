@@ -34,13 +34,11 @@ const Footer: React.FC = () => {
           <div className="max-w-3xl mx-auto md:mx-0 text-center md:text-center">
             <p>
               $POPO is a meme coin with no intrinsic value or expectation of financial return.
-              The coin is for entertainment purposes only and inspired by the beloved cultural phenomenon of Popo (表情包).
             </p>
           </div>
 
           <div className="text-xs whitespace-nowrap flex flex-col items-center">
-            <div className="text-popo-yellow mb-1 text-sm">表情包</div>
-            <div>© {new Date().getFullYear()} Popo. All rights reserved!</div>
+  
           </div>
         </div>
       </div>
