@@ -147,7 +147,7 @@ const HowToBuy: React.FC = () => {
           <Step
             number={3}
             title="Go to PancakeSwap"
-            description="Open PancakeSwap app. Connect your wallet, paste the $POPO token address into PancakeSwap, select PopoQing, and confirm. Sign the wallet signature when prompted."
+            description="Open PancakeSwap app. Connect your wallet, paste the $POPO token address into PancakeSwap, select Popo, and confirm. Sign the wallet signature when prompted."
             icon={pancakeSwapIcon}
             iconAlt="PancakeSwap Icon"
           />
